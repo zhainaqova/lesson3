@@ -5,58 +5,64 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_gravity="center_vertical"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:orientation="vertical">
 
     <EditText
         android:id="@+id/et_number1"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="fill_vertical"
-        android:layout_marginLeft="10px"
-        android:layout_marginTop="20dp"
-        android:layout_marginRight="5px"
-        android:layout_weight="1"
         android:ems="10"
+        android:layout_margin="10px"
         android:inputType="textPersonName"
         android:text="enter number 1" />
 
     <EditText
         android:id="@+id/et_number2"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="10px"
-        android:layout_marginRight="5px"
-        android:layout_weight="1"
         android:ems="10"
+        android:layout_margin="10px"
         android:inputType="textPersonName"
         android:text="enter number 2" />
+    <TextView
+        android:id="@+id/textResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize = "24dp"
+        android:layout_margin = "20dp"
+        android:text="Result"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        <Button
+            android:id="@+id/btnPlus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="btnMinusClicked"
+            android:text="+"/>
+    <Button
+        android:id="@+id/btnMinus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:onClick="btnMinusClicked"
+        android:text="-"/>
+    <Button
+        android:id="@+id/btnMultiple"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:onClick="btnMultipleClicked"
+        android:text="*"/>
+    <Button
+        android:id="@+id/btnDivide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:onClick="btnDivideClicked"
+        android:text="/"/>
 </LinearLayout>
-<LinearLayout
-<Button
-android:id="@+id/button"
-android:layout_width="wrap_content"
-android:layout_height="wrap_content"
-android:layout_weight="1"
-android:text="Button" />
-
-<Button
-android:id="@+id/button2"
-android:layout_width="wrap_content"
-android:layout_height="wrap_content"
-android:layout_weight="1"
-android:text="Button" />
-
-<Button
-android:id="@+id/button3"
-android:layout_width="wrap_content"
-android:layout_height="wrap_content"
-android:layout_weight="1"
-android:text="Button" />
-
-<Button
-android:id="@+id/button4"
-android:layout_width="wrap_content"
-android:layout_height="wrap_content"
-android:layout_weight="1"
-android:text="Button" />
-</LinearLayout>
+  </LinearLayout>
